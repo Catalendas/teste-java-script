@@ -1,21 +1,8 @@
-
+import  {SendPost}  from "./class/sedPost"
 var spanToken = document.querySelector("#tokenId")
 
-function ReceberdadosApi() {
-
-    fetch("http://179.98.77.27:8082/ZenErpWs/system/security/tokenOpRequest", {
-        method: 'POST',
-        headers: { "content-type": "application/json"},
-        body: JSON.stringify({
-            "email": "admin",
-            "password": "admin"
-        })
-    })
-    .then(r => r.text())
-    .then(data => console.log(data))
-    .catch(err => console.log(err))
-        
-}
+const retunrSendPost = new SendPost()
+console.log(retunrSendPost.sendPostApi())
 
 
 ReceberdadosApi()

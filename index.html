@@ -5,22 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="./index.js" defer></script>
+    <link rel="stylesheet" href="./style/style.css">
+    <script src="./scripts/main.js" defer></script>
 </head>
 <body>
+ 
+    <div id="container">
+        <form method="post" id="formId">
 
-    <div id="tokenId"></div>
+            
+           <div>
+                <h1>Formulario de cadastro</h1>
+                <label for="codeId">Code</label>
+                <input type="text" id="codeId" placeholder="Code">
+
+                <label for="descriptionId">Description</label>
+                <input type="text" id="descriptionId" placeholder="Description">
+                <button type="submit" id="button">Enviar</button>
+           </div>
+        </form>
     
-    <form method="post" id="formId">
-        <input type="text" id="codeId">
-        <input type="text" id="descriptionId">
-        <button type="submit" id="button">Enviar</button>
-    </form>
-
-    <div id="primeiraDiv">
-        <div>
-            Marcos
         </div>
     </div>
 </body>
