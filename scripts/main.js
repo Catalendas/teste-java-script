@@ -1,6 +1,7 @@
 import  {SendPost}  from "./class/sedPost"
 var spanToken = document.querySelector("#tokenId")
 
+// Instancia da classe
 const retunrSendPost = new SendPost()
 console.log(retunrSendPost.sendPostApi())
 
